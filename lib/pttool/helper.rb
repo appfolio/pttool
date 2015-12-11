@@ -11,9 +11,7 @@ module PTTool
     end
 
     def self.add_membership(project, person_id, role = 'member')
-      data = PTTool.client.post("/projects/#{project.id}/memberships",
-                                params: { person_id: person_id, role: role })
-      puts data.body
+      project.add_membership(person_id: person_id, role: role)
     end
   end
 end

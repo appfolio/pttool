@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.license = 'Simplified BSD'
   s.name = 'pttool'
   s.post_install_message = 'Thanks for installing!'
-  s.summary = 'Command line tool that interfaces with pivotaltracker'
+  s.summary = 'Command line tool that interfaces with pivotaltracker.'
   s.version = PTTool::VERSION
 
   s.add_runtime_dependency 'docopt', '~> 0.5'
