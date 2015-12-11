@@ -9,7 +9,7 @@
 
 ### List of PT Projects
 
-In order to use this tool, the environment variable `PT_TOOL` must be set to
+In order to use this tool, the environment variable `PT_TOKEN` must be set to
 your PivotalTracker API key. The key is listed under the "API TOKEN" section at
 the bottom of your PivotalTracker
 [profile](https://www.pivotaltracker.com/profile)."
