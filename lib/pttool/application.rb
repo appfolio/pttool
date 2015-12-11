@@ -63,7 +63,7 @@ module PTTool
         all_people.sort_by(&:name).each { |person| display_person(person) }
 
         by_project.each do |project, people|
-          next unless new = all_people - people
+          next if (new = all_people - people).empty?
           puts "\nNew members for #{project.name}:"
           new.sort_by(&:name).each { |person| display_person(person) }
         end
