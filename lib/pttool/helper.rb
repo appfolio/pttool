@@ -10,8 +10,8 @@ module PTTool
       %w(y yes true 1).include?(response)
     end
 
-    def self.add_membership(project, person_id, role = 'member')
-      project.add_membership(person_id: person_id, role: role)
+    def self.add_membership(project, person, role = 'member')
+      project.add_membership(person_id: person.id, role: role)
     end
   end
 end
